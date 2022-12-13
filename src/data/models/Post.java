@@ -53,5 +53,15 @@ public class Post {
         this.body = body;
     }
 
-
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Post{");
+        sb.append("title='").append(title).append('\'');
+        sb.append(", id=").append(id);
+        sb.append(", creationTime=").append(creationTime);
+        sb.append(", body='").append(body).append('\'');
+        sb.append(", comments=").append(comments);
+        sb.append('}');
+        return sb.toString();
+    }
 }

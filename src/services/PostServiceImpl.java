@@ -26,11 +26,13 @@ public class PostServiceImpl implements PostService{
     @Override
     public void deletePost(int id) {
 
+
+
     }
 
     @Override
     public Post viewPost(int id) {
-        return null;
+        return postRepository.findById(id);
     }
 
     @Override
