@@ -2,11 +2,12 @@ import controllers.PostController;
 import dtos.requests.CreatePostRequest;
 import javax.swing.*;
 
+@SpringBootApplication
 
 public class Main {
     private static final PostController postController = new PostController();
     public static void main(String[] args) {
-        displayMainMenu();
+//        displayMainMenu();
     }
 
     private static void displayMainMenu() {
